@@ -4,13 +4,15 @@
 // FUNCIONES --------------------------------------------------
 
 function login() {
+    usuarioDb = 'pepe'
+    passwordDb = '123'
     for (let i = 3; i >= 0; i--) {
         let usuarioPrompt = prompt('Ingrese su usuario')
         let passwordPrompt = prompt('Ingrese su contraseña')
         if (usuarioPrompt == usuarioDb && passwordPrompt == passwordDb) {
             menuPrestamo(usuarioPrompt)
             break
-        } else if (usuario !== usuarioDb || password !== usuarioDb) {
+        } else if (usuarioPrompt !== usuarioDb || passwordPrompt !== usuarioDb) {
             if (i < 1) {
                 alert('Ha ingresado sus datos incorrectamente demasiadas veces\n por favor intente nuevamente mas tarde')
                 break
@@ -26,6 +28,6 @@ function menuPrestamo(usuario) {
 
 //------------------------------------------------------------
 
-usuarioDb = 'pepe'
-passwordDb = '123'
+
+alert('Bienvenido a CoderPrestamo\nPara poder utilizar el simulador debera loguear')
 login()
