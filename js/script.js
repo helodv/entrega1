@@ -31,6 +31,5 @@ function menuPrestamo(usuario) {
 
 //------------------------------------------------------------
 
-
 alert('Bienvenido a CoderPrestamo\nPara poder utilizar el simulador debera loguear')
 login()
