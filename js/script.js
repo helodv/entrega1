@@ -2,6 +2,8 @@
 
 // FUNCIONES --------------------------------------------------
 
+
+// FUNCION login
 function login() {
     // "base de datos"
     usuarioDb = 'pepe'
@@ -12,7 +14,7 @@ function login() {
         let usuarioPrompt = prompt('Ingrese su usuario')
         let passwordPrompt = prompt('Ingrese su contraseña')
         if (usuarioPrompt == usuarioDb && passwordPrompt == passwordDb) {
-            menuPrestamo(usuarioPrompt)
+            menuInversion(usuarioPrompt)
             break
         } else if (usuarioPrompt !== usuarioDb || passwordPrompt !== usuarioDb) {
             if (i < 1) {
@@ -24,8 +26,8 @@ function login() {
     }
 }
 
-
-function menuPrestamo(usuario) {
+// FUNCION calculadora de inversion
+function menuInversion(usuario) {
     alert('Bienvenido ' + usuario)
 }
 
