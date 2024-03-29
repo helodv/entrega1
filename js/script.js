@@ -1,6 +1,7 @@
 //--------------------------
 // 1° Preentrega: CoderHouse: JavaScript
 
+// FUNCIONES --------------------------------------------------
 
 function login() {
     for (let i = 3; i >= 0; i--) {
@@ -22,6 +23,8 @@ function login() {
 function menuPrestamo(usuario) {
     alert('Bienvenido ' + usuario)
 }
+
+//------------------------------------------------------------
 
 usuarioDb = 'pepe'
 passwordDb = '123'
