@@ -1,4 +1,4 @@
-// 1° Preentrega: CoderHouse: JavaScript
+// 1° Preentrega: CoderHouse: JavaScript: login y calculadora de plazo fijo
 
 // FUNCIONES --------------------------------------------------
 
@@ -14,7 +14,7 @@ function login() {
         let usuarioPrompt = prompt('Ingrese su usuario')
         let passwordPrompt = prompt('Ingrese su contraseña')
         if (usuarioPrompt == usuarioDb && passwordPrompt == passwordDb) {
-            menuInversion(usuarioPrompt)
+            menuPlazoFijo(usuarioPrompt)
             break
         } else if (usuarioPrompt !== usuarioDb || passwordPrompt !== usuarioDb) {
             if (i < 1) {
@@ -26,8 +26,8 @@ function login() {
     }
 }
 
-// FUNCION calculadora de inversion
-function menuInversion(usuario) {
+// FUNCION calculadora de plazo fijo
+function menuPlazoFijo(usuario) {
     alert('Bienvenido ' + usuario)
 }
 
