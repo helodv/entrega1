@@ -1,15 +1,18 @@
-// 1° Preentrega: CoderHouse: JavaScript: login y calculadora de plazo fijo
+// CoderHouse
+// JavaScript 
+// Alumno: Hernan Loureiro: 
+// entrega 1: Simulador de plazo fijo
 
 // FUNCIONES --------------------------------------------------
 
 
-// FUNCION login
+// login
 function login() {
     // "base de datos"
     usuarioDb = 'pepe'
     passwordDb = '123'
 
-    // login
+    // prompt login
     for (let i = 3; i >= 0; i--) {
         let usuarioPrompt = prompt('Ingrese su usuario')
         let passwordPrompt = prompt('Ingrese su contraseña')
@@ -26,9 +29,8 @@ function login() {
     }
 }
 
-// FUNCION calculadora de plazo fijo
+// bienvenida y prompt Plazo Fijo
 function menuPlazoFijo(usuario) {
-
     let capitalPrompt = Number(prompt('Bienvenido ' + usuario + '.\nEste es un simulador de plazo fijo.\nIngrese el monto que desea invertir:'))
     let mesesPrompt = Number(prompt('Ingrese a cuantos meses desea crear el plazo fijo'))
     let interesMensual = 5
@@ -36,17 +38,17 @@ function menuPlazoFijo(usuario) {
 
 }
 
+// calculadora de interes compuesto.
 function calculadoraInteresCompuesto(capital, meses, interes) {
     let gananciaTotal = capital
-    for(let i = 0; i < meses; i++){
-        gananciaTotal = (((interes*gananciaTotal) / 100) + gananciaTotal)
-        
+    for (let i = 0; i < meses; i++) {
+        gananciaTotal = (((interes * gananciaTotal) / 100) + gananciaTotal)
     }
     let gananciaNeta = gananciaTotal - capital
-    alert('Si inviertes $' + capital + ' en un plazo de ' + meses + ' meses' +' obtendras un total de $' + gananciaTotal.toFixed(2) + ' con una ganancia neta de $' + gananciaNeta.toFixed(2))
+    alert('Si inviertes $' + capital + ' en un plazo de ' + meses + ' meses' + ' obtendras un total de $' + gananciaTotal.toFixed(2) + ' con una ganancia neta de $' + gananciaNeta.toFixed(2))
 
 }
 
-//------------------------
+//---------------------------------------------------------------------------------
 
 login()
