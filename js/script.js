@@ -28,10 +28,25 @@ function login() {
 
 // FUNCION calculadora de plazo fijo
 function menuPlazoFijo(usuario) {
-    alert('Bienvenido ' + usuario)
+
+    let capitalPrompt = Number(prompt('Bienvenido ' + usuario + '.\nEste es un simulador de plazo fijo.\nIngrese el monto que desea invertir:'))
+    let mesesPrompt = Number(prompt('Ingrese a cuantos meses desea crear el plazo fijo'))
+    let interesMensual = 5
+    calculadoraInteresCompuesto(capitalPrompt, mesesPrompt, interesMensual)
+
 }
 
-//------------------------------------------------------------
+function calculadoraInteresCompuesto(capital, meses, interes) {
+    let gananciaTotal = capital
+    for(let i = 0; i < meses; i++){
+        gananciaTotal = (((interes*gananciaTotal) / 100) + gananciaTotal)
+        
+    }
+    let gananciaNeta = gananciaTotal - capital
+    alert('Si inviertes $' + capital + ' en un plazo de ' + meses + ' meses' +' obtendras un total de $' + gananciaTotal.toFixed(2) + ' con una ganancia neta de $' + gananciaNeta.toFixed(2))
 
-alert('Bienvenido a CoderPrestamo\nPara poder utilizar el simulador debera loguear')
+}
+
+//------------------------
+
 login()
