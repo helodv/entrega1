@@ -1,10 +1,10 @@
 // CoderHouse
 // JavaScript 
-// Alumno: Hernan Loureiro: 
+// Alumno: Hernan Loureiro
 // entrega 1: Simulador de plazo fijo
+//-------------------------------------------------------------
 
 // FUNCIONES --------------------------------------------------
-
 
 // login
 function login() {
